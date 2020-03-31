@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Pr0gramm.Download.Service</name>
+    </assembly>
+    <members>
+        <member name="P:Pr0gramm.Download.Service.Abstraction.IRateLimiter.CurrentRate">
+            <summary>
+              Returns the current rate info
+            </summary>
+        </member>
+        <member name="P:Pr0gramm.Download.Service.Abstraction.IRateLimiter.MaxHits">
+            <summary>
+              Gets the maximum number of hits
+            </summary>
+        </member>
+        <member name="P:Pr0gramm.Download.Service.Abstraction.IRateLimiter.ResetAfterSeconds">
+            <summary>
+              Gets the time when the rate limit will reset
+            </summary>
+        </member>
+        <member name="M:Pr0gramm.Download.Service.Abstraction.IRateLimiter.CheckRateLimit">
+            <summary>
+              Checks if rate limit is reached and increments the hit counter
+            </summary>
+            <returns>True if rate limit not reached; False if rate limit reached</returns>
+        </member>
+        <member name="M:Pr0gramm.Download.Service.Abstraction.IRateLimiter.ResetRateLimit">
+            <summary>
+              Resets rate limit counter
+            </summary>
+        </member>
+        <member name="M:Pr0gramm.Download.Service.Clients.Abstraction.IPr0grammClient.GetItemById(System.Int32)">
+            <summary>
+              Returns Post Item with specific id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pr0gramm.Download.Service.Clients.Pr0grammClient.GetItemById(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Pr0gramm.Download.Service.Controllers.CommonController.GetDirectMediaLink(System.String,System.Boolean)">
+            <summary>
+              Returns direct media link
+            </summary>
+            <param name="url">Link of pr0gramm post e.g. https://pr0gramm.com/top/!%20s%3A800%20-%22video%22%20-fsdghf/3768117 </param>
+            <param name="redirectToFile">Redirects to direct link</param>
+            <returns></returns>
+        </member>
+        <member name="M:Pr0gramm.Download.Service.Controllers.CommonController.GetDirectMediaLinkByIdAsync(System.Int32,System.Boolean)">
+            <summary>
+              Returns the direct media link based on a post id
+            </summary>
+            <param name="postId">pr0gramm post id</param>
+            <returns></returns>
+        </member>
+        <member name="P:Pr0gramm.Download.Service.RateLimiter.CurrentRate">
+            <inheritdoc />
+        </member>
+        <member name="P:Pr0gramm.Download.Service.RateLimiter.MaxHits">
+            <inheritdoc />
+        </member>
+        <member name="P:Pr0gramm.Download.Service.RateLimiter.ResetAfterSeconds">
+            <inheritdoc />
+        </member>
+        <member name="M:Pr0gramm.Download.Service.RateLimiter.CheckRateLimit">
+            <inheritdoc />
+        </member>
+        <member name="M:Pr0gramm.Download.Service.RateLimiter.ResetRateLimit">
+            <inheritdoc />
+        </member>
+        <member name="M:Pr0gramm.Download.Service.Repositorys.Abstraction.ICommonRepository.GetDirectMediaLink(System.Uri)">
+            <summary>
+              Returns the direct media link of a post url
+            </summary>
+            <param name="postUri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pr0gramm.Download.Service.Repositorys.Abstraction.ICommonRepository.GetDirectMediaLink(System.Int32)">
+            <summary>
+              Returns the direct media link of a post url
+            </summary>
+            <param name="postId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pr0gramm.Download.Service.Repositorys.CommonRepository.GetDirectMediaLink(System.Uri)">
+            <inheritdoc />
+        </member>
+        <member name="M:Pr0gramm.Download.Service.Repositorys.CommonRepository.GetDirectMediaLink(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Pr0gramm.Download.Service.Repositorys.CommonRepository.GetIdFromPostUrl(System.Uri)">
+            <summary>
+              Returns the post id of the given pr0gramm post url.
+              Throws exception if url does not contain an id
+            </summary>
+            <param name="postUri"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
