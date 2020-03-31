@@ -1,5 +1,5 @@
 # Pr0gramm Download Service [![](https://images.microbadger.com/badges/version/serverlein/pr0download.svg)](https://microbadger.com/images/serverlein/pr0download "Get your own version badge on microbadger.com")
-A simple REST-API which returns direct links to pr0gramm media files.
+A lightweight REST-API which returns direct links to pr0gramm media files.
 
 ## Getting Started
 
