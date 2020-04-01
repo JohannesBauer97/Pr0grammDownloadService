@@ -28,3 +28,5 @@ services:
         ports:
             - "1040:1040"
 ```
+## Use this service to download videos with Apple iOS Shortcuts
+<img src="https://raw.githubusercontent.com/JohannesBauer97/Pr0grammDownloadService/develop/.github/screens/shortcutv1.png" width="400">
